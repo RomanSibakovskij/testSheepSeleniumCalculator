@@ -12,10 +12,10 @@ public class BaseTest {
     @BeforeEach
     void setUp(){
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-search-engine-choice-screen");
-//        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1920,1080"); // -> this configuration is for GitHub CI headless test runs
+        // options.addArguments("--disable-search-engine-choice-screen");
+       options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1920,1080"); // -> this configuration is for GitHub CI headless test runs
         driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
+        // driver.manage().window().maximize();
         driver.get("https://testsheepnz.github.io/BasicCalculator.html");
     }
 
