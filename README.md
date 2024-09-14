@@ -3,6 +3,7 @@
 Simple Selenium test suite of the Test Sheep NZ calculator basic algorithmic functionality
 
 #Tech Requirements:
+
  1.Java JDK 8 or higher 
  
  2.Apache Maven 
